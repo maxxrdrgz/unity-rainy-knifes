@@ -16,8 +16,6 @@ public class PlayerMove : MonoBehaviour
 
     /**
         Initializes components from the gameObject that will be manipulated
-
-        @returns {void}
      */
     void Awake()
     {
@@ -27,9 +25,7 @@ public class PlayerMove : MonoBehaviour
 
     /**
         starts the timers that is displayed on the main UI
-        
-        @returns {void}
-     */
+    */
     private void Start()
     {
         Time.timeScale = 1f;
@@ -40,8 +36,6 @@ public class PlayerMove : MonoBehaviour
     /**
         checks the player bounds to ensure he stays within the screen view and 
         updates player movement.
-        
-        @returns {void}
      */
     void Update()
     {
@@ -52,8 +46,6 @@ public class PlayerMove : MonoBehaviour
     /**
         Gets the gameObjects transform position and checks if its between min 
         and max X bounds
-
-        @returns {void}
      */
     void PlayerBounds()
     {
@@ -72,8 +64,6 @@ public class PlayerMove : MonoBehaviour
     /**
         Gets horizontal input from user and changes the X axis of the 
         gameObjects transform.position
-
-        @returns {void}
      */
     void Move()
     {
@@ -127,8 +117,6 @@ public class PlayerMove : MonoBehaviour
     /**
         Detects collision with gameObjects with the tag of Knife and restarts the
         game. Game over.
-
-        @returns {void}
      */
     void OnTriggerEnter2D(Collider2D collision)
     {

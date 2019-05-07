@@ -11,8 +11,6 @@ public class KnifeSpawner : MonoBehaviour
 
     /**
         Initializes the knife spawner
-
-        @returns {void}
      */
     void Start()
     {
